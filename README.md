@@ -16,3 +16,10 @@ deno -v
 ```
 deno run hello.ts
 ```
+
+# deno test
+```
+deno test fizz_buzz_test.ts
+
+deno test --watch fizz_buzz_test.ts
+```
