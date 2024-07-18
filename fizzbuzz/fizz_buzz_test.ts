@@ -36,3 +36,15 @@ Deno.test("それ以外のときはそのままの数を返す", () => {
     // assert
     assertEquals(actual, "1");
 });
+
+// 3以外の数字での倍数でのテスト
+Deno.test("3以外の数字での倍数でのテスト", () => {
+    // Arrange
+    const arrayOfInt = [3, 6, 9, 12, 18, 99];
+    // Act
+    arrayOfInt.forEach((int) => {
+        const actual = fizzBuzz(int);
+        // Assert
+        assertEquals(actual, "Fizz");
+    });
+});
